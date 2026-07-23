@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kashish — Finance & Analytics Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-name">KASHISH</div>
+    <div class="nav-links">
+      <a href="#equity">Equity Research</a>
+      <a href="#risk">Risk Tool</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#case">Case Study</a>
+      <a href="Kashish_CV.docx" download>Resume</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Kashish</h1>
+    <p class="hero-tagline">B.A. (Hons.) Economics, Miranda House — Finance, Risk & Analytics Projects</p>
+    <div class="hero-links">
+      <a href="linkedin.com/in/kashish-yadav-73693632a" target="_blank">LinkedIn</a>
+      
+    </div>
+  </section>
+
+  <!-- EQUITY RESEARCH -->
+  <section id="equity" class="project-section">
+    <span class="eyebrow">Project 01</span>
+    <h2>Equity Research & Valuation — Tata Power</h2>
+    <p>Built a full analyst-style research report using DCF and comparable company analysis. My DCF (conservative assumptions) implied ₹110/share; peer EV/EBITDA comps implied ₹395 — nearly matching the real market price of ₹378.5.</p>
+    <div class="stat-row">
+      <div class="mini-stat"><span>₹110</span>DCF Value</div>
+      <div class="mini-stat"><span>₹395</span>Comps (EV/EBITDA)</div>
+      <div class="mini-stat"><span>HOLD</span>My Call</div>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="Tata Power Equity Research.docx" download>Download Report (Word)</a>
+      <a class="btn btn-outline" href="tata power.xlsm" download>Download DCF Model (Excel)</a>
+    </div>
+  </section>
+
+  <!-- RISK TOOL -->
+  <section id="risk" class="project-section alt">
+    <span class="eyebrow">Project 02</span>
+    <h2>Portfolio Risk & Analytics Tool</h2>
+    <p>Python tool analyzing my own multi-asset portfolio — computed returns, volatility, Sharpe ratio, VaR, and correlation across 7 holdings using live market data.</p>
+    <div class="stat-row">
+      <div class="mini-stat"><span>16.6%</span>Volatility</div>
+      <div class="mini-stat"><span>0.11</span>Sharpe Ratio</div>
+      <div class="mini-stat"><span>₹479</span>1-Day VaR (95%)</div>
+    </div>
+    <div class="img-row">
+      <img src="portfolio_allocation.png" alt="Portfolio allocation chart">
+      <img src="cumulative_returns.png" alt="Cumulative returns chart">
+      <img src="correlation_heatmap.png" alt="Correlation heatmap">
+    </div>
+  </section>
+
+  
+  <section id="dashboard" class="project-section">
+    <span class="eyebrow">Project 03</span>
+    <h2>Interactive Finance Dashboard</h2>
+    <p>Live portfolio allocation chart and a budget/savings calculator — built with HTML, CSS, and JavaScript.</p>
+
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-label">Portfolio Value</span>
+        <span class="stat-value">₹31,379</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Top Holding</span>
+        <span class="stat-value">HAL — 28.5%</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Annual Volatility</span>
+        <span class="stat-value">16.6%</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Sharpe Ratio</span>
+        <span class="stat-value">0.11</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h3>Portfolio Allocation</h3>
+        <canvas id="allocationChart"></canvas>
+      </div>
+      <div class="card">
+        <h3>Budget Calculator</h3>
+        <label>Monthly Income (₹)</label>
+        <input type="number" id="income" placeholder="e.g. 20000">
+        <label>Monthly Expenses (₹)</label>
+        <input type="number" id="expenses" placeholder="e.g. 12000">
+        <button onclick="calculateBudget()">Calculate</button>
+        <div id="result"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY -->
+  <section id="case" class="project-section alt">
+    <span class="eyebrow">Project 04</span>
+    <h2>Consulting Case Study</h2>
+    <p>Should a quick-commerce grocer expand into Tier-2 Indian cities? Structured market-entry case covering market sizing, unit economics, and implementation risk.</p>
+    <a class="btn" href="Consultancy Case Study.docx" download>Download Full Case</a>
+  </section>
+
+  <footer>
+    <p>Built by Kashish · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
